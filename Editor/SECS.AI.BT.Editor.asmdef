@@ -1,0 +1,22 @@
+{
+    "name": "SECS.AI.BT.Editor",
+    "rootNamespace": "SECS.AI.BT.Editor",
+    "references": [
+        "Unity.Entities",
+        "Unity.Entities.Editor",
+        "Unity.Collections",
+        "Unity.Mathematics",
+        "SECS.AI.BT"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

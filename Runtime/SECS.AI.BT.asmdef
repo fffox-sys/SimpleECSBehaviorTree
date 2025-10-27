@@ -1,0 +1,20 @@
+{
+    "name": "SECS.AI.BT",
+    "rootNamespace": "SECS.AI.BT",
+    "references": [
+        "Unity.Entities",
+        "Unity.Collections",
+        "Unity.Mathematics",
+        "Unity.Burst",
+        "Unity.Transforms"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

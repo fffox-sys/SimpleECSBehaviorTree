@@ -1,0 +1,187 @@
+/* 行为树图形视图样式表 */
+
+/* 节点类型样式 */
+.bt-control-flow #title {
+    border-left-color: rgb(77, 128, 204);
+    border-left-width: 4px;
+}
+
+.bt-decorator #title {
+    border-left-color: rgb(178, 102, 204);
+    border-left-width: 4px;
+}
+
+.bt-leaf #title {
+    border-left-color: rgb(102, 178, 102);
+    border-left-width: 4px;
+}
+
+.bt-default #title {
+    border-left-color: rgb(153, 153, 153);
+    border-left-width: 4px;
+}
+
+/* 节点悬停效果 */
+.node:hover #title {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 节点选中效果 */
+.node:selected #title {
+    border-color: rgb(68, 192, 255);
+    border-width: 2px;
+}
+
+/* 类型图标样式 */
+#bt-type-icon {
+    -unity-text-align: middle-center;
+    font-size: 12px;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* 端口样式增强 */
+.port {
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+.port:hover {
+    border-color: rgb(68, 192, 255);
+    background-color: rgba(68, 192, 255, 0.3);
+}
+
+/* 连接线样式 */
+.edge {
+    --edge-width: 3px;
+    --edge-color: rgb(255, 255, 255);
+}
+
+.edge:hover {
+    --edge-color: rgb(68, 192, 255);
+    --edge-width: 4px;
+}
+
+.edge:selected {
+    --edge-color: rgb(255, 192, 68);
+    --edge-width: 5px;
+}
+
+/* 执行状态高亮样式 */
+.bt-node-success #title {
+    background-color: rgba(51, 204, 51, 0.4);
+    border-color: rgb(51, 204, 51);
+}
+
+.bt-node-failure #title {
+    background-color: rgba(230, 64, 64, 0.45);
+    border-color: rgb(230, 64, 64);
+}
+
+.bt-node-running #title {
+    background-color: rgba(242, 191, 51, 0.45);
+    border-color: rgb(242, 191, 51);
+}
+
+/* 顺序徽章样式 */
+#bt-order-badge {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    padding: 2px 6px;
+    font-size: 10px;
+    margin-left: 4px;
+    min-width: 16px;
+    -unity-text-align: middle-center;
+}
+
+/* Ghost 节点样式 */
+.bt-ghost-node {
+    opacity: 0.4;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bt-ghost-node #title {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+/* 工具提示样式 */
+.unity-tooltip {
+    background-color: rgba(32, 32, 32, 0.9);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: white;
+    font-size: 11px;
+    max-width: 300px;
+    white-space: normal;
+}
+
+/* 参数面板样式增强 */
+.bt-node-inspector {
+    padding: 4px;
+    background-color: rgba(64, 64, 64, 0.8);
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+.bt-node-inspector .unity-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2px;
+}
+
+.bt-node-inspector .unity-text-field {
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+/* 搜索框样式 */
+.bt-search-field {
+    background-color: rgba(32, 32, 32, 0.9);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+/* 节点创建提示 */
+.bt-creation-hint {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    max-width: 200px;
+    white-space: normal;
+}
+
+/* 调试模式样式 */
+.bt-debug-mode {
+    border-color: 2px dashed rgba(255, 192, 68, 0.5);
+}
+
+.bt-debug-mode .node {
+    cursor: not-allowed;
+}
+
+.bt-debug-mode .node:hover {
+    transform-opacity: none;
+}
+
+/* 调试模式下的节点样式 */
+.bt-debug-mode .node #title {
+    border-left-width: 6px;
+}
+
+.bt-debug-mode .bt-creation-hint {
+    display: none;
+}
