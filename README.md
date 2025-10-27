@@ -1,7 +1,7 @@
 # Simple ECS Behavior Tree
 
 Unity DOTS 原生的轻量级行为树系统
-
+![编辑器界面](https://github.com/fffox-sys/SimpleECSBehaviorTree/blob/main/Other/info.png)
 ## 核心特性
 
 -  **ECS原生**: 基于Unity Entities，支持Burst编译
